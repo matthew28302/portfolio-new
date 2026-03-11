@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyen Vu Xuan Mai | UI/UX Design Intern</title>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="selection:bg-brand-200 selection:text-brand-900 overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-6">
+      <div id="nav-container" class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 rounded-full transition-all duration-300 bg-white/95 border border-zinc-200 shadow-sm">
+        <div class="flex items-center gap-2 group cursor-pointer hover-scale" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <div class="w-10 h-10 bg-brand-500 rounded-2xl flex items-center justify-center text-white font-bold shadow-lg shadow-brand-500/20 group-hover:rotate-12 transition-transform">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <span class="font-display font-bold text-xl tracking-tight hidden sm:block">Nguyen Vu Xuan Mai.</span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm font-semibold text-zinc-600 hover:text-brand-600 transition-colors relative group">
+            About
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
+          </a>
+          <a href="#education" class="text-sm font-semibold text-zinc-600 hover:text-brand-600 transition-colors relative group">
+            Education
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
+          </a>
+          <a href="#skills" class="text-sm font-semibold text-zinc-600 hover:text-brand-600 transition-colors relative group">
+            Skills
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
+          </a>
+          <a href="#projects" class="text-sm font-semibold text-zinc-600 hover:text-brand-600 transition-colors relative group">
+            Projects
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
+          </a>
+          <a href="#contact" class="px-6 py-2.5 bg-brand-600 text-white rounded-full text-sm font-bold hover:bg-brand-700 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand-600/20">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="menu-toggle" class="md:hidden p-2 text-zinc-900">
+          <i id="menu-icon" data-lucide="menu"></i>
+          <i id="close-icon" data-lucide="x" class="hidden"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="absolute top-full left-6 right-6 mt-2 glass rounded-3xl p-8 shadow-2xl md:hidden hidden">
+        <div class="flex flex-col gap-6">
+          <a href="#about" class="text-xl font-bold text-zinc-900 flex items-center justify-between">
+            About <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400"></i>
+          </a>
+          <a href="#education" class="text-xl font-bold text-zinc-900 flex items-center justify-between">
+            Education <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400"></i>
+          </a>
+          <a href="#skills" class="text-xl font-bold text-zinc-900 flex items-center justify-between">
+            Skills <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400"></i>
+          </a>
+          <a href="#projects" class="text-xl font-bold text-zinc-900 flex items-center justify-between">
+            Projects <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400"></i>
+          </a>
+          <a href="#contact" class="text-xl font-bold text-zinc-900 flex items-center justify-between">
+            Contact <i data-lucide="chevron-right" class="w-5 h-5 text-brand-400"></i>
+          </a>
+          <hr class="border-zinc-100" />
+          <div class="flex justify-center gap-8">
+            <a href="https://github.com/imfishball" target="_blank"><i data-lucide="github" class="w-6 h-6 text-zinc-400 hover:text-brand-600"></i></a>
+            <a href="mailto:xuanmai032004@gmail.com"><i data-lucide="mail" class="w-6 h-6 text-zinc-400 hover:text-brand-600"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6">
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-brand-200/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] bg-pink-100/20 blur-[100px] rounded-full"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border-2 border-brand-100 text-brand-600 text-xs font-black mb-10 shadow-sm">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          HELLO! I'M NGUYEN VU XUAN MAI
+        </div>
+        
+        <h1 class="reveal text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tighter text-zinc-900 leading-[0.85] mb-10" style="transition-delay: 0.1s;">
+          <span class="text-brand-500 relative">
+            UI/UX
+            <svg class="absolute -bottom-2 left-0 w-full h-3 text-brand-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+            </svg>
+          </span> <br />
+          <span class="italic font-cute text-brand-600">Design Intern</span>
+        </h1>
+        
+        <p class="reveal text-xl md:text-2xl text-zinc-500 font-medium leading-relaxed mb-12 max-w-2xl mx-auto" style="transition-delay: 0.2s;">
+          Crafting intuitive and engaging digital experiences by understanding user needs and turning them into meaningful solutions.
+        </p>
+        
+        <div class="reveal flex flex-wrap items-center justify-center gap-6" style="transition-delay: 0.3s;">
+          <a href="#projects" class="px-10 py-5 bg-brand-600 text-white rounded-[2rem] font-black text-lg hover:bg-brand-700 hover:scale-105 active:scale-95 transition-all flex items-center gap-3 shadow-2xl shadow-brand-600/30 group">
+            View Projects
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+          <a href="#about" class="px-10 py-5 bg-white border-2 border-zinc-100 text-zinc-900 rounded-[2rem] font-black text-lg hover:border-brand-200 hover:bg-brand-50 transition-all flex items-center gap-2">
+            <i data-lucide="user" class="w-5 h-5 text-brand-500"></i>
+            About Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="reveal relative">
+            <div class="aspect-square rounded-[3rem] overflow-hidden bg-brand-50 border-8 border-white shadow-2xl rotate-2 flex items-center justify-center">
+              <i data-lucide="user-circle" class="w-48 h-48 text-brand-200"></i>
+            </div>
+            <div class="absolute -top-6 -right-6 w-32 h-32 bg-yellow-400 rounded-full flex flex-col items-center justify-center text-zinc-900 p-4 shadow-xl -rotate-12 border-4 border-white animate-float">
+              <i data-lucide="heart" class="w-6 h-6 fill-zinc-900 mb-1"></i>
+              <span class="text-xs font-black text-center leading-tight">PASSIONATE DESIGNER</span>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="inline-flex items-center gap-2 text-brand-500 font-black text-sm uppercase tracking-[0.3em] mb-6">
+              <i data-lucide="info" class="w-4 h-4"></i>
+              About Me
+            </div>
+            <p class="text-4xl md:text-5xl font-display font-black text-zinc-900 mb-8 leading-tight">Turning user needs into <span class="text-brand-500">meaningful</span> solutions.</p>
+            <p class="text-zinc-600 text-lg leading-relaxed font-medium mb-6">
+              I am a final-year student majoring in Computer Networks and Data Communications at UIT (VNU-HCM), with a strong passion for user interface and user experience design.
+            </p>
+            <p class="text-zinc-600 text-lg leading-relaxed font-medium mb-8">
+              I am eager to apply my skills and creativity as a UI/UX design intern, where I can contribute to crafting intuitive and engaging digital experiences. I aspire to grow in the field of design by understanding user needs and turning them into meaningful, user-centered solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications & Activity -->
+    <section id="education" class="py-24 px-6 bg-brand-50/30 relative overflow-hidden">
+      <div class="absolute inset-0 floating-pattern opacity-40"></div>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="flex flex-col items-center text-center mb-16">
+          <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center text-brand-600 mb-6 -rotate-3 shadow-sm">
+            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+          </div>
+          <h2 class="text-sm font-black text-brand-500 uppercase tracking-[0.3em] mb-4">Background</h2>
+          <p class="text-4xl md:text-6xl font-display font-black text-zinc-900">Education & More</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Education -->
+          <div class="reveal lg:col-span-2 p-10 bg-white rounded-[2.5rem] border-2 border-zinc-100 hover:border-brand-200 hover:shadow-2xl transition-all shadow-sm">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center">
+                <i data-lucide="book-open"></i>
+              </div>
+              <h3 class="text-2xl font-display font-black text-zinc-900">Education</h3>
+            </div>
+            <div class="relative pl-8 border-l-2 border-brand-100">
+              <div class="absolute w-4 h-4 bg-brand-500 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+              <h4 class="text-xl font-bold text-zinc-900">University of Information Technology (UIT)</h4>
+              <p class="text-brand-600 font-semibold mb-2">VNUHCM</p>
+              <p class="text-zinc-500 font-medium mb-4">09/2022 - Now</p>
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 text-brand-700 rounded-xl font-bold text-sm">
+                <i data-lucide="award" class="w-4 h-4"></i>
+                Current GPA: 7.6/10
+              </div>
+              <p class="text-zinc-600 mt-4 font-medium">Major: Computer Networks and Data Communications</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-8">
+            <!-- Certifications -->
+            <div class="reveal p-8 bg-white rounded-[2.5rem] border-2 border-zinc-100 hover:border-brand-200 hover:shadow-2xl transition-all h-full shadow-sm">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-yellow-100 text-yellow-600 flex items-center justify-center">
+                  <i data-lucide="medal"></i>
+                </div>
+                <h3 class="text-xl font-display font-black text-zinc-900">Certifications</h3>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border border-yellow-100 relative overflow-hidden group">
+                <i data-lucide="award" class="absolute -right-4 -bottom-4 w-24 h-24 text-yellow-200/50 group-hover:scale-110 transition-transform"></i>
+                <h4 class="font-bold text-zinc-900 relative z-10 mb-2">Your Certification Name</h4>
+                <p class="text-sm text-zinc-600 relative z-10">Issuer Name • Year</p>
+              </div>
+            </div>
+
+            <!-- Activity -->
+            <div class="reveal p-8 bg-white rounded-[2.5rem] border-2 border-zinc-100 hover:border-brand-200 hover:shadow-2xl transition-all h-full shadow-sm" style="transition-delay: 0.1s;">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center">
+                  <i data-lucide="users"></i>
+                </div>
+                <h3 class="text-xl font-display font-black text-zinc-900">Activity</h3>
+              </div>
+              <div class="relative pl-6 border-l-2 border-pink-100">
+                <div class="absolute w-3 h-3 bg-pink-500 rounded-full -left-[7px] top-1.5 border-2 border-white"></div>
+                <h4 class="font-bold text-zinc-900">Member of Social Work Team</h4>
+                <p class="text-pink-600 font-semibold text-sm mb-1">UIT</p>
+                <p class="text-zinc-500 text-sm font-medium">2022 - Now</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 px-6 bg-white relative">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-16">
+          <div class="w-16 h-16 bg-brand-50 rounded-3xl flex items-center justify-center text-brand-600 mb-6 rotate-3">
+            <i data-lucide="cpu" class="w-8 h-8"></i>
+          </div>
+          <h2 class="text-sm font-black text-brand-500 uppercase tracking-[0.3em] mb-4">My Arsenal</h2>
+          <p class="text-4xl md:text-6xl font-display font-black text-zinc-900">Skills & Expertise</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Technical Skills -->
+          <div class="reveal p-10 bg-zinc-50 rounded-[2.5rem] border border-zinc-100">
+            <h3 class="text-2xl font-display font-black text-zinc-900 mb-8 flex items-center gap-3">
+              <i data-lucide="wrench" class="text-brand-500"></i> Technical Skills
+            </h3>
+            
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-sm font-bold text-zinc-400 uppercase tracking-wider mb-3">Design Tools</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Figma</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Framer</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Illustrator</span>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="text-sm font-bold text-zinc-400 uppercase tracking-wider mb-3">UX Skills</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">User Research</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Wireframing</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Prototyping</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Usability Testing</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-bold text-zinc-400 uppercase tracking-wider mb-3">Front-end</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">HTML</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">CSS</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">JavaScript</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">React</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-bold text-zinc-400 uppercase tracking-wider mb-3">Others</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Github</span>
+                  <span class="px-4 py-2 bg-white border border-zinc-200 rounded-xl text-sm font-bold text-zinc-700 shadow-sm">Bootstrap CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="reveal p-10 bg-brand-50 rounded-[2.5rem] border border-brand-100" style="transition-delay: 0.1s;">
+            <h3 class="text-2xl font-display font-black text-zinc-900 mb-8 flex items-center gap-3">
+              <i data-lucide="heart-handshake" class="text-brand-500"></i> Soft Skills
+            </h3>
+            
+            <div class="flex flex-col gap-4">
+              <div class="p-4 bg-white rounded-2xl shadow-sm flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center shrink-0">
+                  <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-zinc-900">Logical Thinking & Problem-solving</h4>
+                  <p class="text-sm text-zinc-500 mt-1">Approaching design challenges with analytical and creative solutions.</p>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white rounded-2xl shadow-sm flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                  <i data-lucide="messages-square" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-zinc-900">Communication & Team Collaboration</h4>
+                  <p class="text-sm text-zinc-500 mt-1">Effectively conveying ideas and working seamlessly with cross-functional teams.</p>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white rounded-2xl shadow-sm flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center shrink-0">
+                  <i data-lucide="eye" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-zinc-900">Attention to UI Details & Accessibility</h4>
+                  <p class="text-sm text-zinc-500 mt-1">Ensuring pixel-perfect designs that are usable by everyone.</p>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white rounded-2xl shadow-sm flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                  <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-zinc-900">Adaptability in Agile Environments</h4>
+                  <p class="text-sm text-zinc-500 mt-1">Quickly adjusting to changes and iterating designs based on feedback.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-brand-50/30 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-16">
+          <div class="w-16 h-16 bg-white rounded-3xl flex items-center justify-center text-brand-600 mb-6 -rotate-3 shadow-sm">
+            <i data-lucide="folder-heart" class="w-8 h-8"></i>
+          </div>
+          <h2 class="text-sm font-black text-brand-500 uppercase tracking-[0.3em] mb-4">Portfolio</h2>
+          <p class="text-4xl md:text-6xl font-display font-black text-zinc-900">My Projects</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+          <!-- Project 1 -->
+          <a href="/project.html?id=1" class="reveal group relative flex flex-col gap-6 cursor-pointer hover:-translate-y-2 transition-transform duration-500">
+            <div class="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden transition-all duration-500 shadow-xl bg-zinc-200 border-4 border-white">
+              <img src="/images/project-1-1.jpg" onerror="this.src='https://picsum.photos/seed/watermelon/800/600'" alt="Watermelon Shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <div class="px-6 py-3 rounded-full bg-white text-brand-600 font-bold text-sm flex items-center gap-2 shadow-xl">
+                  View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 px-2">
+              <h3 class="text-2xl font-display font-black text-zinc-900 group-hover:text-brand-600 transition-colors">Watermelon Shop</h3>
+              <p class="text-zinc-500 font-medium">A delightful e-commerce experience for watermelon lovers. (3 images available)</p>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="/project.html?id=2" class="reveal group relative flex flex-col gap-6 cursor-pointer hover:-translate-y-2 transition-transform duration-500" style="transition-delay: 0.1s;">
+            <div class="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden transition-all duration-500 shadow-xl bg-zinc-200 border-4 border-white">
+              <img src="/images/project-2-1.jpg" onerror="this.src='https://picsum.photos/seed/fest/800/600'" alt="Watermelon Fest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <div class="px-6 py-3 rounded-full bg-white text-brand-600 font-bold text-sm flex items-center gap-2 shadow-xl">
+                  View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 px-2">
+              <h3 class="text-2xl font-display font-black text-zinc-900 group-hover:text-brand-600 transition-colors">Watermelon Fest</h3>
+              <p class="text-zinc-500 font-medium">Branding and interface design for the ultimate summer festival. (5 images available)</p>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="/project.html?id=3" class="reveal group relative flex flex-col gap-6 cursor-pointer hover:-translate-y-2 transition-transform duration-500">
+            <div class="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden transition-all duration-500 shadow-xl bg-zinc-200 border-4 border-white">
+              <img src="/images/project-3-1.jpg" onerror="this.src='https://picsum.photos/seed/cat/800/600'" alt="Meowlish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <div class="px-6 py-3 rounded-full bg-white text-brand-600 font-bold text-sm flex items-center gap-2 shadow-xl">
+                  View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 px-2">
+              <h3 class="text-2xl font-display font-black text-zinc-900 group-hover:text-brand-600 transition-colors">Meowlish</h3>
+              <p class="text-zinc-500 font-medium">A playful platform for cat enthusiasts to connect and share. (7 images available)</p>
+            </div>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="/project.html?id=4" class="reveal group relative flex flex-col gap-6 cursor-pointer hover:-translate-y-2 transition-transform duration-500" style="transition-delay: 0.1s;">
+            <div class="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden transition-all duration-500 shadow-xl bg-zinc-200 border-4 border-white">
+              <img src="/images/project-4-1.jpg" onerror="this.src='https://picsum.photos/seed/music/800/600'" alt="Music Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <div class="px-6 py-3 rounded-full bg-white text-brand-600 font-bold text-sm flex items-center gap-2 shadow-xl">
+                  View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 px-2">
+              <h3 class="text-2xl font-display font-black text-zinc-900 group-hover:text-brand-600 transition-colors">Music Project</h3>
+              <p class="text-zinc-500 font-medium">A new way to experience and discover music. (9 images available)</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="pt-32 pb-10 px-6 bg-zinc-900 text-white relative overflow-hidden">
+      <div class="absolute inset-0 floating-pattern opacity-10"></div>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+          <div class="reveal">
+            <h2 class="text-5xl md:text-7xl font-display font-black mb-6">Let's create <br/><span class="text-brand-400">together.</span></h2>
+            <p class="text-zinc-400 text-lg mb-10 max-w-md">I am eager to apply my skills and creativity as a UI/UX design intern. Feel free to reach out if you think we'd be a good fit!</p>
+            
+            <div class="flex flex-col gap-6">
+              <a href="tel:0976418155" class="flex items-center gap-4 text-zinc-300 hover:text-brand-400 transition-colors group w-fit">
+                <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <span class="font-medium text-lg">0976 418 155</span>
+              </a>
+              <a href="mailto:xuanmai032004@gmail.com" class="flex items-center gap-4 text-zinc-300 hover:text-brand-400 transition-colors group w-fit">
+                <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <span class="font-medium text-lg">xuanmai032004@gmail.com</span>
+              </a>
+              <div class="flex items-center gap-4 text-zinc-300 w-fit">
+                <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <span class="font-medium text-lg">Ho Chi Minh City</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal flex flex-col justify-center md:items-end" style="transition-delay: 0.2s;">
+            <div class="p-8 bg-zinc-800/50 backdrop-blur-sm rounded-[2.5rem] border border-zinc-700/50 w-full max-w-md">
+              <h3 class="text-2xl font-bold mb-6">Connect with me</h3>
+              <div class="flex flex-col gap-4">
+                <a href="https://github.com/imfishball" target="_blank" class="flex items-center justify-between p-4 rounded-2xl bg-zinc-800 hover:bg-brand-600 transition-colors group">
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                    <span class="font-bold">GitHub</span>
+                  </div>
+                  <i data-lucide="arrow-up-right" class="w-5 h-5 opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="pt-8 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <i data-lucide="smile" class="w-6 h-6 text-brand-400"></i>
+        <span class="font-display font-bold text-xl tracking-tight">Nguyen Vu Xuan Mai.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/imfishball" target="_blank" class="text-zinc-500 hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+      </div>
+      <p class="text-sm font-medium text-zinc-500">
+        © <span class="current-year"></span> Nguyen Vu Xuan Mai. Designed with ❤️
+      </p>
+    </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/script.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
+
