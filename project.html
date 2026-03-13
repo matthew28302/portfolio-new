@@ -49,14 +49,15 @@
         2: {
           title: "Watermelon Fest",
           description: "Branding and interface design for the ultimate summer festival. The design captures the energy and excitement of a large-scale community event.",
-          images: ["/images/project-2-1.jpg", "/images/project-2-2.jpg", "/images/project-2-3.jpg", "/images/project-2-4.jpg", "/images/project-2-5.jpg"],
-          seeds: ["festival", "concert", "summer", "party", "event"],
+          images: ["/images/project-2-1.jpg", "/images/project-2-2.jpg", "/images/project-2-3.jpg", "/images/project-2-4.jpg", "/images/project-2-5.jpg", "/images/project-2-6.jpg"],
+          seeds: ["festival", "concert", "summer", "party", "event", "music"],
           role: "Web Developer",
           tools: ["HTML", "CSS", "JavaScript", "Bootstrap"]
         },
         3: {
           title: "Meowlish",
           description: "A playful platform for cat enthusiasts to connect and share. The interface is designed to be friendly, accessible, and full of personality.",
+          demoLink: "https://imfishball.framer.website/chitiet/trang-chu",
           flowImage: "/images/project-3-flow.jpg",
           images: ["/images/project-3-1.jpg", "/images/project-3-2.jpg", "/images/project-3-3.jpg", "/images/project-3-4.jpg", "/images/project-3-5.jpg", "/images/project-3-6.jpg", "/images/project-3-7.jpg"],
           seeds: ["cat", "pet", "kitten", "animal", "social", "community", "playful"],
@@ -66,6 +67,7 @@
         4: {
           title: "Music Project",
           description: "A new way to experience and discover music. This project explores dark mode aesthetics and fluid motion for a premium audio experience.",
+          demoLink: "https://www.figma.com/proto/AaMitEGHtijZykVF5xurET/Web-nh%E1%BA%A1c?node-id=34-3&t=RsLmEIl3UbhO9yVZ-1",
           images: [
             "/images/project-4-1.jpg", "/images/project-4-2.jpg", "/images/project-4-3.jpg",
             "/images/project-4-4.jpg", "/images/project-4-5.jpg", "/images/project-4-6.jpg",
@@ -124,6 +126,14 @@
                 ${project.tools.map(tool => `<span class="px-6 py-2 rounded-full bg-zinc-100 text-zinc-600 text-sm font-bold uppercase tracking-wider border border-zinc-200 shadow-sm">${tool}</span>`).join('')}
               </div>
               <p class="text-zinc-600 text-xl leading-relaxed font-medium max-w-4xl">${project.description}</p>
+              ${project.demoLink ? `
+              <div class="mt-8">
+                <a href="${project.demoLink}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-zinc-900 text-white rounded-full font-bold hover:bg-brand-600 hover:scale-105 transition-all shadow-xl shadow-zinc-900/20">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                  View Live Prototype
+                </a>
+              </div>
+              ` : ''}
             </div>
             
             <div class="grid grid-cols-1 gap-6">

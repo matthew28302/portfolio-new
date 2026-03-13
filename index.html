@@ -122,8 +122,9 @@
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div class="reveal relative">
-            <div class="aspect-square rounded-[3rem] overflow-hidden bg-brand-50 border-8 border-white shadow-2xl rotate-2 flex items-center justify-center">
-              <i data-lucide="user-circle" class="w-48 h-48 text-brand-200"></i>
+            <div class="aspect-square rounded-[3rem] overflow-hidden bg-brand-50 border-8 border-white shadow-2xl rotate-2 flex items-center justify-center relative group">
+              <img src="/images/profile.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Profile Picture" class="w-full h-full object-cover absolute inset-0 z-10" />
+              <i data-lucide="user-circle" class="w-48 h-48 text-brand-200 hidden z-0"></i>
             </div>
             <div class="absolute -top-6 -right-6 w-32 h-32 bg-yellow-400 rounded-full flex flex-col items-center justify-center text-zinc-900 p-4 shadow-xl -rotate-12 border-4 border-white animate-float">
               <i data-lucide="heart" class="w-6 h-6 fill-zinc-900 mb-1"></i>
@@ -387,7 +388,7 @@
             </div>
             <div class="flex flex-col gap-2 px-2">
               <h3 class="text-2xl font-display font-black text-zinc-900 group-hover:text-brand-600 transition-colors">Watermelon Fest</h3>
-              <p class="text-zinc-500 font-medium">Branding and interface design for the ultimate summer festival. (5 images available)</p>
+              <p class="text-zinc-500 font-medium">Branding and interface design for the ultimate summer festival. (6 images available)</p>
             </div>
           </a>
 
