@@ -57,6 +57,7 @@
         3: {
           title: "Meowlish",
           description: "A playful platform for cat enthusiasts to connect and share. The interface is designed to be friendly, accessible, and full of personality.",
+          flowImage: "/images/project-3-flow.jpg",
           images: ["/images/project-3-1.jpg", "/images/project-3-2.jpg", "/images/project-3-3.jpg", "/images/project-3-4.jpg", "/images/project-3-5.jpg", "/images/project-3-6.jpg", "/images/project-3-7.jpg"],
           seeds: ["cat", "pet", "kitten", "animal", "social", "community", "playful"],
           role: "UI/UX Designer",
@@ -95,6 +96,16 @@
         document.title = `${project.title} | Nguyen Vu Xuan Mai`;
 
         let imagesHtml = '';
+        
+        if (project.flowImage) {
+          imagesHtml += `
+            <div class="reveal rounded-2xl overflow-hidden shadow-md border-2 border-zinc-200 mb-16 max-w-4xl mx-auto bg-white">
+              <img src="${project.flowImage}" onerror="this.src='https://picsum.photos/seed/flowchart/1200/800'" alt="${project.title} Flow Diagram" class="w-full h-auto object-contain bg-zinc-50" />
+            </div>
+            <hr class="border-zinc-200 mb-16 max-w-4xl mx-auto w-full" />
+          `;
+        }
+
         project.images.forEach((img, index) => {
           const seed = project.seeds[index] || 'design';
           imagesHtml += `
